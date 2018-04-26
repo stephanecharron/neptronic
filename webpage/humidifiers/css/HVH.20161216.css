@@ -1,0 +1,156 @@
+/* the top menu trail */
+div.trail {height:10px; margin-top:9px; margin-left:17px;}
+div.trail a, div.trail span { float:left; display:block; color:#244f85; font-size:10px; } 
+div.trail span.sep { width:15px; height:100%; background-image:url("../images/trail.png")no-repeat; background-position:5px 3px; }
+div.trail span.last {font-weight:bold; }
+/* banner */
+div.bannerFrame { overflow:auto; width:811px; height:306px; margin-left:5px; background-image:url('../Images.2/bannerFrame.jpg'); background-repeat:no-repeat; padding-left:11px;position:relative; }
+div.bannerFrame h3 { margin:34px 0px 0px 0px; border-left:solid 40px #11a0d4; height:20px; padding-left:10px; font-size:24px; line-height:24px; color:#11a0d4; }
+/* top banners */
+div.topbanner { position:relative; height:138px;}
+div.topbanner > div { display:none; position:absolute; left:0px; top:0px;}
+ul.bannerText { margin-top:7px; margin-left:52px; list-style-position:outside; height:110px; color:#11a0d4; width:350px;  }
+ul.bannerText > li {padding-bottom:5px; }
+ul.bannerText > li > span { color:#777777; font-size:14px; }
+/* banner tabs */
+ul.bannerTabsTop { list-style-type:none; padding-left:50px; z-index:500; margin:0; overflow:hidden; }
+ul.bannerTabsTop li.banActiveTop { background:url('../Images.2/HumiBtns.png') -25px -2px; }
+ul.bannerTabsTop > li { margin-right:15px; overflow:hidden; float:left; height:22px; width:143px; background-repeat:no-repeat; position:relative; z-index:10;}
+ul.bannerTabs { list-style-type:none; padding-left:50px; margin:0; }
+ul.bannerTabs li { margin-right:15px; overflow:hidden; float:left; height:80px; width:143px; background-repeat:no-repeat; position:relative; }
+/* ul.bannerTabs li > h4 {color:#fff; font-weight:bold; margin-top:20px; font-size:15px; height:25px; text-align:center;} */
+ul.bannerTabs li > h4 {color:#fff; font-weight:bold; margin-left:15px; margin-top:10px; font-size:15px; height:25px; }
+ul.bannerTabs li > h4 > span { font-size:14px; display:block; padding-left:1px; z-index:1000; }
+ul.bannerTabs li > span { display:block; font-weight:bold; font-size:11px; padding-left:5px; padding-top:10px; }
+ul.bannerTabs li:hover > span { color:#fff;}
+ul.bannerTabs li.banActive { background:url('../Images.2/HumiBtns.png') -25px -24px; }
+li.banActive span { color:#fff; }
+ul.bannerTabs li.banNotActive { background:url('../Images.2/HumiBtns.png') -25px -243px; }
+ul.bannerTabs li.banNotActive:hover {background-position:-25px -135px; cursor:pointer; }
+
+/* the popup for the actuators and the pdfs */
+#pop_bro { display:none;  width:230px; position:absolute;  left:186px;  top:28px; z-index:10000; }
+#pop_instr { display:none; width:260px; position:absolute; left:1px; top:28px; z-index:10000; }
+#pop_instr2 { display:none; width:330px; position:absolute; left:1px; top:28px; z-index:10000; }
+#pop_video { display:none; width:260px; position:absolute; left:1px; top:28px; z-index:10000; }
+
+div.popPdf { display:table; border-spacing:0; text-align:left; padding:0; margin:0; }
+div.popC2 > ul { list-style-type:none; }
+div.popC2 a { display:inline-block; width:100%; cursor:pointer; color:#705D62;  padding-right:5px }
+div.popC2 a.apModel1 { height:25px; padding-top:12px;}
+div.popC2 a.apModel2 { height:25px; }
+div.popC2 a.apModel3 { height:25px; padding-bottom:5px; }
+div.popC2 { padding:10px 15px 15px 10px; display:table-cell; height:100%; border:solid 1px #a698a1; background-color:#ffffff; color:#705D62; font-size:12px; }
+div.popC2 li.sel { font-weight:bold; padding:5px 0px 4px 5px; border-bottom:1px solid #E5E5E5; background-color:#e5e5e5; }
+div.popC2 li { padding-left:6px;}
+div.popC1 { width:4px; display:table-cell; height:100%; background-image:url('../Images.2/LShadow.png'); background-repeat:repeat-y; background-position:0px 0px; padding-top:5px;}
+div.popC3 { width:4px; display:table-cell; height:100%; background:url('../Images.2/RShadow.png') repeat-y 0px 0px; }
+
+
+/* body top buttons */
+div.downloadBtns { border-spacing:0px;}
+div.downloadBtns > a { display:inline-block; height:29px; margin-left:16px;}
+a.selectSoftware { background:url('../Images.2/HumiBtns.png') no-repeat -25px -359px; width:254px; margin-right:165px;}
+a.selectSoftware:hover {background-position:-300px -359px; cursor:pointer;}
+
+div.downloadBtns > div {display:inline-block; height:29px; position:relative; }
+
+
+a.pdfBtn1 {background:url('../Images.2/CtrlBtns1.2.1.png') no-repeat -509px -24px; width:81px; height:29px; margin-left:190px; display:block; }
+a.pdf_bro_pop, a.pdfBtn1:hover {background-position:-509px -68px; cursor:pointer;}
+
+a.pdfBtn2 {background:url('../Images.2/CtrlBtns1.2.1.png') no-repeat -509px -279px; width:91px; height:29px; margin-left:5px; display:block;}
+a.pdf_instr_pop, a.pdfBtn2:hover {background-position:-509px -319px; cursor:pointer;}
+
+a.pdfBtn3 {background:url('../Images.2/CtrlBtns1.2.1.png') no-repeat -509px -199px; width:91px; height:29px; margin-left:5px; display:block;}
+a.pdfBtn3:hover {background-position:-509px -239px; cursor:pointer;}
+
+a.videoBtn {background:url('../Images.2/CtrlBtns1.2.1.png') no-repeat -512px -395px;  width:80px; height:29px; margin-left:5px; display:block;}
+a.video_pop, a.videoBtn:hover {background-position:-512px -476px; cursor:pointer;}
+
+/* body heading title */
+div#bodyHeading {width:786px; height:34px; margin-left:16px; margin-top:5px; background-image:url('../Images.2/BodyHeaderBackground.png'); background-repeat:no-repeat; padding-top:5px;position:relative; } 
+div#bodyHeading span.prodName { border-left:solid 40px #11a0d4; height:20px; padding-left:10px; font-size:16px; line-height:21px; color:#777777; font-weight:bold }
+div#bodyHeading span.prodDetail { height:20px; font-size:16px; line-height:21px; color:#777777;}
+
+/* Collapsible*/
+div.cPanel { margin-left:15px; overflow:hidden; position:relative;min-width:820px;}
+div.cPanel a, div.cPanel a:link, div.cPanel a:visited, div.cPanel a:active { color:#023b87; text-decoration:underline;}
+div.cPanel > h4 { display:block; cursor:pointer; height:30px; }
+div.cPanel > h4 > span { display:inline-block; font-size:14px; color:#47505c; line-height:30px; padding-left:25px; background:url('../Images.2/HumiBtns.png') no-repeat -40px -435px; }
+div.cPanel > h4 > span { font-size:16px; color:#777777; }
+div.cPanelOpen > h4, div.cPanelClosed:hover h4 { background:url('../Images.2/BodyHeaderBackground.png') no-repeat; }
+div.cPanelOpen > h4:hover > span { color:#11a0d4; /* 47505c; */}
+div.cPanelClosed > h4:hover > span { color:#11a0d4; }
+div.cPanelOpen > h4 > span { background-position:-34px -402px; }
+div.cPanelClosed > div.cPanelBody { display:none; }
+.cPanelBody > p, .cPanelBody > table, .cPanelBody > ul, .cPanelBody > h4{margin-top:10px !important;}
+/* section details: overview, features, BACnet, etc ..*/
+div#distribution, div#hygienicAndEfficient{display:none;}
+div#innerPageGrp { position:relative; min-height:430px; }
+.cPanelBody p { margin:0px 55px 15px 25px;  font-size:14px; }
+ul.detLst {list-style-type:disc; margin:0px 0px 12px 38px; list-style-position:outside; }
+ul.detLst li, ul.detLst a { font-size:14px; }
+ul.detLst > li { padding:0px 30px 8px 0px; margin:0; }
+ul.detLst > li > ul { list-style-type:circle !important; margin-left:15px;}
+ul.detLst > li > ul > li { padding-bottom:5px; }
+ul.detLstNum { list-style-type:decimal; margin-left:47px !important;}
+ul.detLstNum > li { padding:0px 30px 8px 0px; margin:0; }
+
+/* page specific */
+
+/* table */
+table.infoTable {width:95%; text-align:center;margin-bottom:20px;}
+table.infoTable td {background: #D3DFEE;padding:10px;}
+table.infoTable tr.odd td{background: #95B3D7;}
+table.infoTable td.title { background:#4F81BD !important; color:white; font-weight:bold; font-size:17px;}
+    table.infoTable tbody .title { font-size: 13px; }
+/* top banner */
+div#topbanner_overview { display:block; }
+div.topbanner div > span { display: block; margin-left: 50px; margin-top: 10px; font-size: 20px; color: #11a0d4;}
+img#topbanner_img1 { position: absolute; top: -28px; right: 0px;}
+img#topbanner_logo { position: absolute; top: 115px; left: 600px;}
+
+img.imgOverview { margin:10px 20px 50px 140px; }
+
+/* overview */
+div.overviewImgContainer {position:absolute; top:-50px; right:33px;}
+div.overviewImgContainer img {width:350px;}
+div.overviewContainer {height:330px;}
+div.overviewContainer p {width:50%;}
+
+div.whatIsNew table{margin-bottom:20px;margin-top:10px;width: 100%;}
+.row_1 td img {width:60px;}
+.row_2 td {font-weight:bold; font-size: 17px;}
+.row_1 td, .row_2 td, .row_3 td {text-align:center;width:20%;}
+
+div.whatIsNew {width:97%;}
+/* distribution */
+div#distribution ul.detLst, div#distribution table.distributionInSpaceFan{width:63%; margin-top:0px;}
+div.inDuctContainer ,
+div.InSpaceDirectContainer {position: relative;height: 215px;overflow: hidden;}
+div.InSpaceFanContainer {position: relative;height: 200px;overflow: hidden;}
+div.InDuctImgContainer img,
+div.InSpaceFanImgContainer img,
+div.InSpaceDirectImgContainer img{ width:300px;}
+div.InDuctImgContainer ,
+div.InSpaceDirectImgContainer,
+div.InSpaceFanImgContainer  {position:absolute; top:10px; right:12px;}
+div.InSpaceFanImgContainer  {top:21px;}
+
+table.distributionInSpaceFan td.title {font-size:13px;}
+
+/* Hygienic and Efficient */ 
+div#hygienicAndEfficient li ul{ margin-top:3px;}
+div.hygienicImgCon { position:relative; font-size:18px; margin-bottom:30px;}
+div.hygienicImgCon > img { margin-left:150px; }
+
+div.content { width: 100%; position: relative; }
+div.content h1 { font-size: 18px; padding-top: 30px; padding-bottom: 10px; }
+div.leftContent,div.rightContent { width: 50%; float: left; }
+div.leftContent .cPanel,div.rightContent .cPanel{ min-width:0px;}
+
+div.leftContent div.cPanelOpen > h4.title,
+div.rightContent div.cPanelOpen > h4.title{ background: url('../Images/miniGradient.png') no-repeat;}
+div.leftContent div.cPanelClosed > h4.title:hover,
+div.rightContent div.cPanelClosed > h4.title:hover { background: url('../Images/miniGradient.png') no-repeat;}
