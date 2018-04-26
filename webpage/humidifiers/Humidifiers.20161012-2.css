@@ -1,0 +1,402 @@
+/* adbanner */
+img.adNeptronic {
+    padding-top: 15px;
+    margin-left: -2px;
+}
+
+img.adTitleText {
+    padding-top: 5px;
+    padding-left: 46px;
+    z-index: 100;
+}
+
+div.adText {
+    position: absolute;
+    top: 100px;
+    left: 48px;
+    width: 450px;
+    font-size: 20px;
+    color: #184D8F;
+    z-index: 1000;
+}
+
+div.adText2 {
+    position: absolute;
+    top: 115px;
+    left: 48px;
+    width: 450px;
+    font-size: 20px;
+    color: #184D8F;
+    z-index: 1000;
+}
+
+div.adText3 {
+    position: absolute;
+    top: 70px;
+    left: 248px;
+    width: 450px;
+    font-size: 24px;
+    color: #184D8F;
+    z-index: 1000;
+}
+
+div.adText3Min {
+    top: 10px;
+    font-size: 14px;
+}
+
+div.adText4 {
+    position: absolute;
+    top: 100px;
+    left: 248px;
+    width: 450px;
+    font-size: 20px;
+    color: #184D8F;
+    z-index: 1000;
+}
+
+div.adText5 {
+    position: absolute;
+    top: 100px;
+    left: 48px;
+    width: 450px;
+    font-size: 28px;
+    color: #184D8F;
+    z-index: 1000;
+}
+
+table.navCarousel {
+    position: absolute;
+    top: 240px;
+    left: 48px;
+    z-index: 1000;
+}
+
+img.adLearnMore {
+    position: absolute;
+    top: 240px;
+    left: 670px;
+    z-index: 1000;
+}
+
+img.adLearnMore2 {
+    position: absolute;
+    top: 190px;
+    left: 45px;
+    z-index: 1000;
+}
+
+img.adLearnMore3 {
+    position: absolute;
+    top: 200px;
+    left: 95px;
+    z-index: 1000;
+}
+
+img.adLearnMore4 {
+    position: absolute;
+    top: 200px;
+    left: 205px;
+    z-index: 1000;
+}
+
+img.adLearnMore5 {
+    position: absolute;
+    top: 180px;
+    left: 45px;
+    z-index: 1000;
+}
+
+#mainAdBannerDetails ul {
+    font-size: 14px;
+    color: #8d97a4;
+    width: 800px;
+    padding-left: 61px;
+    list-style-type: disc;
+}
+
+    #mainAdBannerDetails ul li {
+        float: left;
+        width: 800px;
+    }
+
+        #mainAdBannerDetails ul li span {
+            color: #85af37;
+        }
+
+img.adTitleDesc {
+    padding-top: 10px;
+    padding-left: 106px;
+}
+
+img.adTitlePic {
+}
+/* page */
+table.dTbl {
+    padding-left: 0px;
+}
+
+    table.dTbl tr {
+     /*   height: 128px;  */
+    }
+
+        table.dTbl tr.xtraTopSpace {
+       /*     height: 290px; */
+        }
+
+    table.dTbl td {
+        width: 148px;
+        vertical-align: top;
+    }
+
+        table.dTbl td.sep {
+            width: 11px;
+        }
+
+div.sep {
+    height: 128px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    border-left: dotted 1px #9f9f9f;
+}
+
+div.linkGroup {
+    position: relative;
+    /* background: url('images/ControlsBG.png') repeat-x; */
+    height: 128px;
+}
+
+    div.linkGroup ul {
+        position: relative;
+        z-index: 200;
+        padding-top: 120px;
+        list-style-type: none;
+        background-color: Transparent;
+    }
+
+
+
+img.awardIcon {
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+div.linkGroup li.titleW {
+    color: White;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+div.linkGroup li.titleW1 {
+    margin-top: -16px;
+    color: White;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+div.linkGroup li.titleY {
+    height: 37px;
+    color: #fcc420;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+div.linkGroup li {
+    padding-top: 2px;
+    padding-left: 7px;
+}
+
+    div.linkGroup li div {
+        display: inline;
+        font-size: 14px;
+        font-weight: bold;
+        padding-right: 5px;
+        color: #184d8f;
+        padding-top: 10px;
+    }
+
+    div.linkGroup li a {
+        display: inline-block;
+        font-size: 11px;
+        color: #747474;
+        height: 15px;
+        font-weight: bold;
+    }
+
+        div.linkGroup li a.twoLines {
+            height: 40px;
+            vertical-align: top;
+            padding-top: 2px;
+        }
+
+
+
+
+
+div.linkGroup img {
+    /* position: absolute;
+    z-index: 100; */
+}
+
+
+div.linkGroup div.lgInfo {
+    position: relative;
+    z-index: 201; /* IMG was set at 200... */
+    margin-top: -41px;
+    padding-left: 6px;
+}
+
+
+div.lgInfo a:hover { text-decoration: none !important; }
+
+
+/* model title */
+div.linkGroup div.lgInfo span.i1 {
+    font-family: Arial;
+    display: block;
+    font-size: 14px;
+    color: #daa303;
+    font-weight: bold;
+}
+
+/* model descrition */
+div.linkGroup div.lgInfo span.i2 {
+    font-family: Arial;
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 0px;
+    padding-top: 4px; /* avoids mouse-over link jitter */
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #094279;
+}
+
+/* model category */
+div.linkGroup div.lgInfo span.i3 {
+    font-family: Arial;
+    display: block;
+    font-size: 12px;
+    color: #8896a4;
+    line-height: 12px;
+}
+
+
+
+/* model descrition */
+div.linkGroup div.lgInfo span.i2.fr {
+    color: #8896a4;
+    font-weight: normal;
+}
+
+/* model category */
+div.linkGroup div.lgInfo span.i3.fr {
+    color: #094279;
+    font-weight: bold;
+}
+
+div.lgInfo span.i1.narrow,
+div.lgInfo span.i2.narrow,
+div.lgInfo span.i3.narrow {
+    letter-spacing: -1px;
+}
+
+
+
+div.lgInfo span.i1:hover,
+div.lgInfo span.i2:hover,
+div.lgInfo span.i3:hover {
+    text-decoration: none !important;
+}
+
+
+
+/* force i1 title mouseover color for the whole pic */
+div.linkGroup:hover div.lgInfo span.i1 { color: #3399ff; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+img.imgfan {
+    top: -5px;
+    left: 53px;
+}
+
+img.imgHumCon {
+    top: -8px;
+    left: 98px;
+}
+
+img.imgVelCon {
+    top: -1px;
+    left: 75px;
+}
+
+img.imgTran {
+    top: -3px;
+    left: 88px;
+}
+
+img.imgVav {
+    top: -10px;
+    left: 59px;
+}
+
+img.imgHeatPump {
+    top: -8px;
+    left: 98px;
+}
+
+img.imgStaticPress {
+    top: 2px;
+    left: 58px;
+}
+
+img.imgSensors {
+    top: -5px;
+    left: 74px;
+}
+
+img.imgSSR {
+    top: 10px;
+    left: 78px;
+}
+
+img.imgInducer {
+    top: 3px;
+    left: 58px;
+}
+
+img.imgBN {
+    padding-left: 1px;
+}
+
+div.carousBtns { position:absolute; left:20px; top:245px; z-index:50000; }
+div.carousBtns div { display:block; float:left; z-index:50000; margin-right:8px;}
+div.carousBtns div.ccbtn_1a { cursor:pointer; color:#d6d6d4; font-size:32px; }
+div.carousBtns div.ccbtn_2a { cursor:pointer; color:#d6d6d4; font-size:32px; }
+div.carousBtns div.ccbtn_3a { cursor:pointer; color:#d6d6d4; font-size:32px; }
+div.carousBtns div.ccbtn_4a { cursor:pointer; color:#d6d6d4; font-size:32px; }
+div.carousBtns div.ccbtn_5a { cursor:pointer; color:#d6d6d4; font-size:32px; }
+div.carousBtns div.ccbtn_6a { background:url("images/Pause_Icon_Homepage.png") no-repeat 0px 10px; width:21px; height:32px; line-height: 32px; cursor:pointer; }
+div.carousBtns div.ccbtn_6c { background:url("images/Play_Icon_Homepage.png") no-repeat 0px 10px; width:21px; height:32px; line-height: 32px; cursor:pointer; }
+
+div.carousBtns div.ccbtn_1c, div.carousBtns div.ccbtn_1a:hover { color:#003a69; }
+div.carousBtns div.ccbtn_2c, div.carousBtns div.ccbtn_2a:hover { color:#003a69; }
+div.carousBtns div.ccbtn_3c, div.carousBtns div.ccbtn_3a:hover { color:#003a69; }
+div.carousBtns div.ccbtn_4c, div.carousBtns div.ccbtn_4a:hover { color:#003a69; }
+div.carousBtns div.ccbtn_5c, div.carousBtns div.ccbtn_5a:hover { color:#003a69; }
+div.carousBtns div.ccbtn_6b, div.carousBtns div.ccbtn_6a:hover { background:url("images/Pause_Icon_Homepage_Mouse_Over.png") no-repeat 0px 10px; width:21px; height:40px; line-height: 32px; cursor:pointer; }
+div.carousBtns div.ccbtn_6d, div.carousBtns div.ccbtn_6c:hover { background:url("images/Play_Icon_Homepage_Mouse_Over.png") no-repeat 0px 10px; width:21px; height:40px; line-height: 32px; cursor:pointer; }
+
+div.carousBtns div.ccbtn_1c, div.carousBtns div.ccbtn_2b, div.carousBtns div.ccbtn_3b, div.carousBtns div.ccbtn_4b, div.carousBtns div.ccbtn_5b { cursor:default;}

@@ -1,0 +1,155 @@
+/* adbanner */
+img.adNeptronic {
+	padding-top:15px;
+	margin-left:-2px;
+}
+img.adTitleText {
+	padding-top:5px;
+	padding-left:46px;
+	z-index:100;
+}
+div.adText {
+	padding-top:5px;
+	padding-left:48px;
+	width:450px; 
+	font-size:14px; 
+	color:#9ab850;	
+}
+table.navCarousel
+{
+	position:absolute;
+	bottom:5px;
+	left:60px;
+}
+img.adLearnMore {	
+	padding-top:10px;
+	padding-left:60px;
+}
+#mainAdBannerDetails ul {
+	font-size:14px; 
+	color:#8d97a4;
+	width:800px;
+	padding-left:61px;
+	list-style-type:disc;	
+}
+#mainAdBannerDetails ul li {
+	float:left;
+	width:800px;
+}
+#mainAdBannerDetails ul li span {
+	color:#85af37;
+}
+img.adTitleDesc {
+	padding-top:10px;
+	padding-left:106px;
+}
+img.adTitlePic {
+	position:absolute;
+	right:0px;
+}
+/* page */
+table.dTbl { padding-left:0px;}
+table.dTbl tr { height:135px; }
+table.dTbl td { width:148px; }
+table.dTbl td.sep { width:11px; }
+div.sep {
+	height:120px;
+	margin-left:5px;
+	margin-bottom:15px;
+	border-left:dotted 1px #9f9f9f;
+}
+div.linkGroup {
+	position:relative;
+	background: url('images/ControlsBG.png') repeat-x;
+	height:135px;
+}
+div.linkGroup ul {
+	position:relative;
+	z-index:200;
+	padding-top:120px;
+}
+div.linkGroup li.titleW {
+	color:White;
+	font-size:13px;
+	font-weight:bold;
+}
+div.linkGroup li.titleW1{
+	margin-top:-16px;
+	color:White;
+	font-size:13px;
+	font-weight:bold;
+}
+div.linkGroup li.titleY {
+	height:37px;
+	color:#fcc420;
+	font-size:13px;
+	font-weight:bold;
+}
+div.linkGroup li {
+	padding-top:2px;
+	padding-left:7px;
+}
+div.linkGroup li div 
+{
+	display:inline;
+	font-size:14px;
+	font-weight:bold;
+	padding-right:5px;
+	color:#184d8f; 
+	padding-top:10px;
+}
+div.linkGroup li a {
+	display:inline-block;
+	font-size:12px;
+	color:#747474;
+	height:12px;
+}
+div.linkGroup li a.twoLines {
+	height:40px;
+	vertical-align:top;
+	padding-top:2px;
+}
+div.linkGroup img {
+	position:absolute;
+	z-index:100;
+}
+img.imgfan {
+	top:-5px;
+	left:53px;
+}
+img.imgHumCon {
+	top:-8px;
+	left:98px;
+}
+img.imgVelCon {
+	top:-1px;
+	left:75px;
+}
+img.imgTran {
+	top:-3px;
+	left:88px;
+}
+img.imgVav {
+	top:-10px;
+	left:59px;
+}
+img.imgHeatPump {
+	top:-8px;
+	left:98px;
+}
+img.imgStaticPress {
+	top:2px;
+	left:58px;
+}
+img.imgSensors {
+	top:-5px;
+	left:74px;
+}
+img.imgSSR {
+	top:10px;
+	left:78px;
+}
+img.imgInducer {
+	top:3px;
+	left:58px;
+}
