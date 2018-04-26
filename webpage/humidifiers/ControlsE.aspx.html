@@ -1,0 +1,635 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+	Neptronic
+</title><link rel="Stylesheet" type="text/css" href="../Neptronic.20180321.css" />
+
+    <!--[if (IE 8) | (IE 7) ]>
+        <style>
+            div.carouselContainer { left:10px; }
+            div.topMenu {margin-top:0px; }
+        </style>
+    <![endif]-->
+
+    
+    <!-- Taken from /Controls/HumidityController.aspx -->
+    <link rel="Stylesheet" type="text/css" href="../Controls/HumidityController.20171205.css"/>
+    <link rel="Stylesheet" type="text/css" href="../Controls/ControlsStyleTable.css"/>
+        <link rel="Stylesheet" type="text/css" href="Controls_20170518.css" />
+    <link rel="Stylesheet" type="text/css" href="Page.css" />
+
+
+
+    <!-- global fix 'adBanner.jpg' shadow false positive by adBlockers -->
+    <style type="text/css">div.bannerFrame, #bannerFrame {
+            background-image: url('../Images/bannerFrame.jpg') !important;
+        }
+
+        div.mainAdBanner, #mainAdBanner {
+            background-image: url('../Images/bannerBack2.png') !important;
+        }
+    </style>
+
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-54908717-1', 'auto');
+        ga('send', 'pageview');
+
+        function JsAcrexIn() {
+            $("#AcrexPart1").addClass("Underline");
+            $("#AcrexPart2").addClass("Underline");
+        }
+        function JsAcrexOut() {
+            $("#AcrexPart1").removeClass("Underline");
+            $("#AcrexPart2").removeClass("Underline");
+        }
+
+    </script>
+
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="ControlsE.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNDE1MzUzNzk0ZGTJupoLdiHDZ/dUhNE0pXZr5wC3Lg==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D8A4CC5C" />
+
+        <div class="pageHeader">
+            <div class="pageInner">
+                <div class="pageHeaderBanner">
+                    <a href="../index.html">
+                        <img src="../images/topBannerNEP.png" class="imgBanner" /></a>
+                    <img src="../images/topBanner.png" class="imgBanner1" />
+                </div>
+                
+                <div class="topMenu">
+                    <div class="topMenuItemS">
+                        <div class="tmiBorder"></div>
+                        <div class="tmiDetails" id="topHome">
+                            <p><a href="../index.html">HOME</a></p>
+                        </div>
+                        <div class="tmiBorder"></div>
+                        <div class="clearBoth"></div>
+                        <div class="bling"></div>
+                    </div>
+                    <div class="topMenuItem">
+                        <div class="tmiBorder"></div>
+                        <div class="tmiDetails" id="topHumidisoft">
+                            <p><a href="http://www.humidisoft.com">HUMIDISOFT</a></p>
+                        </div>
+                        <div class="tmiBorder"></div>
+                        <div class="clearBoth"></div>
+                    </div>
+                    <div class="topMenuItem">
+                        <div class="tmiBorder"></div>
+                        <div class="tmiDetails" id="topHeaterSoft">
+                            <p><a href="http://www.neptronic.net">HEATER SOFTWARE</a></p>
+                        </div>
+                        <div class="tmiBorder"></div>
+                        <div class="clearBoth"></div>
+                    </div>
+
+                    <div class="topMenuItem">
+                        <div class="tmiBorder"></div>
+                        <div class="tmiDetails" id="topActSoft">
+                            <p><a href="../Actuators/ActuatorSelectionSoftware.aspx.html">ACTUATOR SOFTWARE</a></p>
+                        </div>
+                        <div class="tmiBorder"></div>
+                        <div class="clearBoth"></div>
+                    </div>
+                    <div class="topMenuItem">
+                        <div class="tmiBorder"></div>
+                        <div class="tmiDetails" id="topValveSoft">
+                            <p><a href="../Valves/ValveSelectionSoftware.aspx.html">VALVE SOFTWARE</a></p>
+                        </div>
+                        <div class="tmiBorder"></div>
+                        <div class="clearBoth"></div>
+                    </div>
+                    <div class="clearBoth"></div>
+                </div>
+                <div class="topCategories">
+                    <div class="itemL" id="titleControls">
+                        <p><a href="../Controls/Controls.aspx.html">HVAC Controls</a></p>
+                    </div>
+                    <div class="itemL" id="titleAct">
+                        <p><a href="../Actuators/Actuators.aspx.html">Actuators</a></p>
+                    </div>
+                    <div class="itemL" id="titleValve">
+                        <p><a href="../Valves/Valves.aspx.html">Actuated Valves</a></p>
+                    </div>
+                    <div class="itemL" id="titleHum">
+                        <p><a href="humidifiers.aspx.html">Humidifiers</a></p>
+                    </div>
+                    <div class="itemL" id="titleHeater">
+                        <p><a href="../Heaters/ElectricDuctHeaters.aspx.html">Electric Heaters</a></p>
+                    </div>
+                    <div class="itemL"></div>
+                    <div class="itemR" id="titleFrancais">
+                        <p><a href="../Accueil.aspx-setLang=fr.html" id="ctl00_lnkfrench">Fran&#231;ais</a></p>
+                    </div>
+                    <div class="itemR" id="titleContactUs">
+                        <p><a href="../OfficeLocations.aspx.html">Contact Us</a></p>
+                    </div>
+                    <div class="clearBoth"></div>
+                </div>
+            </div>
+        </div>
+        <div class="clearBoth"></div>
+
+
+        <div class="pageInner">
+            <div class="bodyLeft">
+                
+    <div>
+        <div class="trail">
+            <a href="../Home.aspx.html">Home</a>
+            <span class="sep"></span>
+            <a href="Humidifiers.aspx.html">Humidifiers</a>
+            <span class="sep"></span>
+            <a href="Humidifiers50hz.aspx.html">50Hz</a>
+            <span class="sep"></span>
+            <span class="last">Controls</span>
+            <div class="clearBoth"></div>
+        </div>
+
+                <!-- THIS SECTION IS USED IN 
+                    /Controls/HumidityController.aspx &
+                    /Humidifiers/Controls.aspx        &
+                    /HumidifIers/ControlsE.aspx
+                    ANY AND ALL CHANGES SHOULD BE APPLIED TO THESE THREE PAGES
+                 -->
+                <div class="bannerFrame">
+                    <h3>HRO - Wall Mount Humidity Controller</h3>
+                    
+                    <div class="topbanner">
+                        <div id="topbanner_HRO20">
+                            <ul class="bannerText">
+                                <li><span>Combination humidifier controller and room humidistat</span></li>
+                                
+                                <li><span>Built-in humidification and dehumidification sequences</span></li>
+                                <li><span>Stand-alone or BACnet</span></li>
+                                <li><span>4 inputs and 6 outputs</span></li>
+                                <li><span>Fully configurable PID on all ramps</span></li>
+                               
+                            </ul>
+                        </div>
+                        <div id="topbanner_SHR10">
+                            <ul class="bannerText">
+                                <li><span>Duct or wall mount humidity sensors</span></li>
+                                <li><span>Duct humidistats</span></li>
+                                <li><span>Window temperature sensor</span></li>
+                            </ul>
+                        </div>
+                        <img id="topbanner_img1" src="../Controls/Images/HumidityControl.png" alt="Humidity Control"/>
+                        <img id="topbanner_img2" src="../Controls/Images/SHC10.png" alt="SHR10"/>
+                        <img id="btl" src="../Controls/Images/BTL%20Logo-3.png" alt="" />
+                    </div>            
+                    
+                    <ul class="bannerTabsTop">
+                        <li id="banTab_HRO20_top" class="banActiveTop"></li>
+                        <li id="banTab_SHR10_top"></li> 
+                        <li id="banTab_SHC80_top"></li>
+                    </ul>
+                    <ul class="bannerTabs">
+                        <li id="banTab_HRO20" class="banActive">
+                            <h4>HRO</h4>
+                            <span>Wall Mount Humidity<br />Controller</span>
+                            <h3><span>Wall Mount Humidity Controller</span></h3>
+                        </li>
+                        <li id="banTab_SHR10" class="banNotActive">
+                            <h4>SH Series</h4>
+                            <span>Humidistats and <br />Humidity Sensors</span>
+                            <h3><span>Wall Humidity Sensor</span></h3>
+                        </li> 
+                    </ul>
+                </div>
+                
+                <div class="downloadBtns">
+                    <a href="../index.html" class="selectSoftwareNewSpacing" target="_blank"></a>
+                    <div class="pdf_HRO20">
+                        <a id="pdf_instr" class="pdfBtn2 popper"></a>
+                        
+                        <div id="pop_instr" class="popPdfCon">
+                            <div class="popPdf">
+                                <div class="popC1"></div>
+                                <div class="popC2">
+                                    <ul>
+                                        <li class="sel">Instructions<span></span></li>
+                                        <li><a target="_blank" class="apModel4" href="../Controls/PDF/HRO20-ESA-170512.pdf">HRO20</a></li>
+                                        <li><a target="_blank" class="apModel4" href="../Controls/PDF/HROB20-ESA-170512.pdf">HROB20</a></li>
+                                        
+                                        <li><a target="_blank" class="apModel4 apModel2" href="../Controls/PDF/HRO-WhatsNew-151008-ESA.pdf">What's New</a></li>
+                                        <li class="sel">Tools<span></span></li>
+                                        <li><a target="_blank" class="apModel4 bacnet_guide" href="to_be_filled.html">BACnet Guide</a></li>
+                                        <li><a target="_blank" class="apModel4" href="http://www.bacnetinternational.net/btl/index.php?m=68">BTL Listing</a></li>
+                                    </ul>
+                                </div>
+                                <div class="popC3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pdf_SHR10"  style="display:none;">
+                        <a id="pdf_instr" class="pdfBtn2 popper"></a>
+                        
+                         <div id="pop_instr" class="popPdfCon">
+                            <div class="popPdf">
+                                <div class="popC1"></div>
+                                <div class="popC2">
+                                    <ul>
+                                        <li class="sel">Instructions<span></span></li>
+                                        <li><a target="_blank" class="apModel4" href="../Controls/PDF/SHC80-ESA-130716.pdf">SHC80</a></li>
+                                        <li><a target="_blank" class="apModel4" href="../Controls/PDF/SHR10-ESA-130716.pdf">SHR10</a></li>
+                                        <li><a target="_blank" class="apModel4" href="../Controls/PDF/SHH8-160627-BSA.pdf">SHH8</a></li>
+                                        <li><a target="_blank" class="apModel4" href="../Controls/PDF/OTW-030910.pdf">OTW</a></li>
+                                        <li><a target="_blank" class="apModel4" href="PDF/SHW0-11-ESA-130716.pdf">SHW0-11</a></li>    
+                                        <li><a target="_blank" class="apModel4" href="PDF/Controls/LT-FS-751-112-02.pdf">APS</a></li>    
+                                        <li><a target="_blank" class="apModel4" href="PDF/Controls/W42AA.pdf">W42AA</a></li>                                       
+                                    </ul>
+                                </div>
+                                <div class="popC3"></div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+                <div id="bodyHeading">
+                    <span class="prodName">HRO</span>
+                    <span class="prodDetail">- Wall Mount Humidity Controller</span>  
+                </div>
+                
+                <!-- begin collapse -->
+                <div id="innerPageGrp">
+                    <div id="HRO20">
+                        <div class="cPanel cPanelOpen">
+                            <div class="content">
+                                <div class="imgLay">
+                                    <img src="../Controls/Images/HumidityControl_top.png" alt="Humidity Control" />
+                                </div>
+                                <div class="leftContent">
+                                    <h1>Details</h1>
+                                    <div class="cPanelOpen">
+                                        <div class="titles"><div></div><span>Control Features</span></div>
+                                        <div class="cPanelBody">
+                                            <ul>
+                                                <li>6 humidification and dehumidification outputs
+                                                    <ul> 
+                                                        <li>4 analog outputs (0-10 or 2-10 Vdc)</li>
+                                                        <li class="last">2 dry contacts</li>
+                                                    </ul>
+                                                </li>
+                                                <li>4 Inputs
+                                                    <ul>
+                                                        <li>2 Configurable analog inputs (0-10 or 2-10 Vdc)</li>
+                                                        <li>Window or external temperature sensor input</li>
+                                                        <li>Alarm status input</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Selectable and configurable ramps
+                                                    <ul>
+                                                        <li>External humidity</li>
+                                                        <li>High Limit</li>
+                                                        <li>External demand low signal selector (LSS)</li>
+                                                        <li>External humidity sensor averaging</li>
+                                                        <li>Duct supply input</li>
+                                                        <li>External demand signal</li>
+                                                    </ul>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="cPanelOpen">
+                                        <div class="titles"><div></div><span>Operational Features</span></div>
+                                        <div class="cPanelBody">
+                                            <ul>
+                                                <li>24Vac operation</li>
+                                                <li>Adjustable setpoint with auto reset from external sensor</li>
+                                                <li>Backlit LCD with simple icon and text driven menus</li>
+                                                <li>Humidification and dehumidification indicator</li>
+                                                <li>Selectable Fahreinheit or Celsius scale</li>
+                                                <li>Multi level lockable access menu</li>
+                                                <li>Lockable setpoint and control mode</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="cPanelOpen">
+                                        <div class="titles"><div></div><span>BACnet (HROB20 model only)</span></div>
+                                        <div class="cPanelBody">
+                                            <ul>
+                                                <li>BACnet MS/TP @9600, 19200, 38400, or 76800bps</li>
+                                                <li>Selectable MAC address</li>
+                                                <li>Manual or automatic device instance configuration</li>
+                                                <li>Automatic Baud Rate Detection</li>                                              
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rightContent">
+                                    <h1>Models</h1>
+                                    <div class="cPanelOpen">
+                                        <div class="titles"><div></div><span>Pricing</span></div>
+                                        <div class="cPanelBody">
+                                            <table cellpadding="0" cellspacing="0" class="grid header">
+                                                <tr class="odd superTall">
+                                                    <td class="rb wModelTitle">Model</td>
+                                                    <td class="rb wModelTitle">List Price</td>
+                                                    <td class="wCompatible">Type</td>
+                                                </tr>
+                                            </table>
+                                            <table cellpadding="0" cellspacing="0" class="grid data">
+                                                <tr class="odd short">
+                                                    <td class="rb wActuator"><a href="../Controls/PDF/HRO20-ESA-170512.pdf" target="_blank">HRO20</a></td>
+                                                    <td class="rb wModel">$ 536</td>
+                                                    <td class="wCompatible">Standard</td>
+                                                  
+                                                </tr>
+                                                <tr class="even short">
+                                                    <td class="rb wActuator"><a href="../Controls/PDF/HROB20-ESA-170512.pdf" target="_blank">HROB20</a></td>
+                                                    <td class="rb wModel">$ 876</td>
+                                                    <td class="wCompatible">BACnet MS/TP</td>
+                                                  
+                                                </tr>
+                                               
+                                                
+                                            </table>
+                                        
+                                        </div>
+                                    </div>                                
+                                    <div class="cPanelOpen">
+                                        <div class="titles"><div></div><span>Applications</span></div>
+                                        <div class="cPanelBody">
+                                            <ul>
+                                                <li>Neptronic <a href="SKR.aspx.html">SKR</a>,
+                                                <a href="SK302.aspx.html">SK300</a>,
+                                                <a href="SK302E.aspx.html">SKE</a>, 
+                                                and <a href="SKG.aspx.html">SKG3000</a> and <a href="SKGE.aspx.html">SKGE3</a> humidifiers</li>
+
+                                                <li>Other humidification and dehumidification applications</li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>                                        
+                            </div>
+                        </div>
+                    </div>
+                                
+                
+                    <div id="SHR10">
+                        <div class="shrcon">
+                            <div>
+                                <div class="shrcon_1">
+                                    <div><img src="../Controls/Images/SHC10-1.png" alt="" /></div>
+                                    <div class="shrPricing"><a href="../Controls/PDF/SHC80-ESA-130716.pdf" target="_blank">SHC80</a> | $306</div>
+                                </div>
+                                <div class="shrcon_2">
+                                    <h5>Details</h5>
+                                    <ul>
+                                        <li>Duct mounted humidity sensor</li>
+                                        <li>Built-in temperature sensor</li>
+                                        <li>2 analog outputs (0 - 10 Vdc)</li>
+                                        <li>Can be installed in association with Neptronic room humidistat (HRO20)</li>
+                                        <li>Status LED</li>
+                                    </ul>
+                                </div>
+                                <div style="clear:both;"></div>
+                            </div>
+                        </div>
+
+                        <div class="shrcon">
+                            <h5><span class="prodName">SHR10 - </span><span class="prodDetail">Wall Mount Humidity Sensor</span></h5>
+                            <div>
+                                <div class="shrcon_1">
+                                    <div><img src="../Controls/Images/STR1-big.png" alt="" /></div>
+                                    <div class="shrPricing"><a href="../Controls/PDF/SHR10-ESA-130716.pdf" target="_blank">SHR10</a> | $233</div>
+                                </div>
+                                <div class="shrcon_2">
+                                    <h5>Details</h5>
+                                    <ul>
+                                        <li>Wall mounted humidity sensor</li>
+                                        <li>Built-in tempearture sensor</li>
+                                        <li>Plastic cover for wall mount installation</li>
+                                        <li>2 analog outputs (0 - 10 Vdc)</li>
+                                        <li>Can be installed in association with Neptronic room (HRO20) humidistat or directly to the Neptronic SK300 / SKE Series Steam humidifier (rev 3.3)</li>
+                                        <li>High accuracy and stability</li>
+                                    </ul>
+                                </div>
+                                <div style="clear:both;"></div>
+                            </div>
+                        </div>
+
+                        <div class="shrcon">
+                            <h5><span class="prodName">SHH8 - </span><span class="prodDetail">Duct Humidistat</span></h5>
+                            <div>
+                                <div class="shrcon_1">
+                                    <div><img src="../Controls/Images/Duct%20Humidistat-SHH8-160504(modified)4.png" alt="" /></div>
+                                     <div class="shrPricing"><a href="../Controls/PDF/SHH8-160627-BSA.pdf" target="_blank">SHH8</a> | $387</div>
+                                </div>
+                                <div class="shrcon_2">
+                                    <h5>Details</h5>
+                                    <ul>
+                                        <li>Duct humidistat with on-board setpoint adjustment</li>
+                                        <li>Dust-tight microswitch with SPDT contacts</li>
+                                        <li>Switch between humidify and dehumidify</li>
+                                        <li>Low-voltage operation (24Vac)</li>
+                                        <li>Accuracy: ± 3 or 4% RH</li>
+                                     
+                                    </ul>
+                                </div>
+                                <div style="clear:both;"></div>
+                            </div>
+                        </div>
+                        <div class="shrcon">
+                            <h5><span class="prodName">OTW / SHW - </span><span class="prodDetail">Window Temperature Sensor</span></h5>
+                            <div>
+                                <div class="shrcon_1">
+                                    <div><img src="../Controls/Images/OTW_SHW-big.png" alt="" /></div>
+                                    <div class="shrPricing"><a href="../Controls/PDF/OTW-030910.pdf" target="_blank">OTW</a> | 3.3K&#8486; | $26</div>
+                                    <div class="shrPricing1"><a href="PDF/SHW0-11-ESA-130716.pdf" target="_blank">SHW0-11</a> | 10K&#8486; | $26</div>
+                                </div>
+                                <div class="shrcon_2">
+                                    <h5>Details</h5>
+                                    <ul>
+                                        <li>10K&#8486; (SHW0-11) or 3.3&#8486; (OTW) temperature sensor</li>
+                                        <li>Self adhesive: sticks directly on window</li>
+                                        <li>SHW0-11 compatible with HRO20 humidistats</li>
+                                        <li>OTW compatible with SKR humidifiers</li>
+                                     
+                                    </ul>
+                                </div>
+                                <div style="clear:both;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                         
+                </div> <!-- end of #innerPageGrp-->
+
+        <hr class="sep" />
+
+        <div class="bodyTitle">OTHER CONTROLS</div>
+        <table>
+            <tr>
+                <td class="tdtop">
+                    <img src="Images/hum/ctrl.png" alt=""/>
+                </td>
+                <td class="tdtop">
+                    <div class="bodySubTitle"><a href="PDF/Controls/LT-FS-751-112-02.pdf" target="_blank">APS</a> Air pressure switch</div>
+                    <div class="bodySubTitle"><a href="PDF/Controls/W42AA.pdf" target="_blank">W42AA</a> Wall humidistat two positions</div>
+                </td>
+            </tr>
+        </table>
+        <div class="warranty">
+        </div>
+    </div>
+
+                <div class="bottomSpace">
+                </div>
+
+            </div>
+            <div class="bodyRight">
+
+                <a href="../Aboutus.aspx.html" class="tour"><span>About Us</span></a>
+                <a id="NeptronicDocumentation" href="../NeptronicDocumentation.aspx.html" target="" class="download"><span>Download Page</span></a>
+                <a href="../TechTime.aspx.html" target="" class="techTalk"><span>TechTime</span></a>
+                <a href="../LatestNews.aspx.html" target="" class="news"><span>Latest News</span></a>
+
+				<!-- Ashrae -->
+                <div class="bborder"></div>
+                <a href="../LatestNews/20180321/Ashrae.aspx.html" target="" class="rlbl1">
+                    <br />Neptronic at ASHRAE Montreal</a>
+                <a href="../LatestNews/20180321/Ashrae.aspx.html" target="" class="Ashrae2018"></a>
+
+				 <!-- LB -->
+                <div class="bborder"></div>
+                <a href="../LatestNews/20180320_1/LB.aspx.html" target="" class="rlbl1">
+                    <br />Neptronic at Light + Building 2018, Frankfurt</a>
+                <a href="../LatestNews/20180320_1/LB.aspx.html" target="" class="LB"></a>
+
+				 <!-- CMPX -->
+                <div class="bborder"></div>
+                <a href="../LatestNews/20180320_2/CMPX.aspx.html" target="" class="rlbl1">
+                    <br />Neptronic at CMPX, Toronto 2018</a>
+                <a href="../LatestNews/20180320_2/CMPX.aspx.html" target="" class="CMPX"></a>
+
+				 <!-- Tecnocontrol -->
+                <div class="bborder"></div>
+                <a href="../LatestNews/20180320_3/Tecnocontrol.aspx.html" target="" class="rlbl1">
+                    <br />New Distributor</a>
+                <a href="../LatestNews/20180320_3/Tecnocontrol.aspx.html" target="" class="Tecnocontrol"></a>
+
+				<!-- Neptronic Recommends Reading  -->
+                <div class="bborder"></div>
+                <a href="https://www.esmagazine.com/articles/98691-have-you-vaccinated-your-building" target="" class="rlbl1">
+                    <br />Neptronic Recommends Reading</a>
+                <a href="https://www.esmagazine.com/articles/98691-have-you-vaccinated-your-building" target="" class="RecRead"></a>
+
+				 <!-- AHR -->
+                <div class="bborder"></div>
+                <a href="../LatestNews/20180218/AHR.aspx.html" target="" class="rlbl1">
+                    <br />Neptronic at AHR 2018 - Chicago</a>
+                <a href="../LatestNews/20180218/AHR.aspx.html" target="" class="AHR"></a>
+          
+                <div class="bborder"></div>
+                <a href="http://www.bacnetinternational.net/catalog/index.php?m=68" target="_blank" class="rbacnet"></a>
+                <div class="bborder"></div>
+                <a href="../pdf/QMS-1253-03_ENG_Neptronic.pdf" target="_blank" class="riso"></a>
+            </div>
+            <div class="clearBoth"></div>
+        </div>
+
+        <div class="pageInner">
+            <div class="bodyLeft">
+                <div class="prefooter">
+                    <span class="L"><a href="../AboutUs.aspx.html">About Us</a></span>
+                    <span class="L"><a href="../SupportStaff.aspx.html">Support Staff</a></span>
+                    <span class="L"><a href="../OfficeLocations.aspx.html">Office Locations</a></span>
+                    <span class="L"><a href="../LatestNews.aspx.html">Latest News</a></span>
+                    <span class="L"><a href="../NeptronicPatents.aspx.html">Neptronic Patents</a></span>
+                    <span class="L"><a href="../SiteMap.aspx.html">Site Map</a></span>
+                    <span class="L1"><a href="../Sales-Conditions.aspx.html">Sales-Conditions</a></span>
+                    <a class="R" href="http://www.youtube.com/user/Neptronic"></a>
+                    <a class="Rimg" href="http://www.youtube.com/user/Neptronic">
+                        <img src="../images/Youtube.jpg" /></a>
+                    <a class="R" href="http://www.linkedin.com/company/neptronic"></a>
+                    <a class="Rimg" href="http://www.linkedin.com/company/neptronic">
+                        <img src="../images/Linkedin.jpg" /></a>
+                    <a class="R" href="http://www.facebook.com/Neptronic"></a>
+                    <a class="Rimg" href="http://www.facebook.com/Neptronic">
+                        <img src="../images/facebook.jpg" /></a>
+                    <div class="clearBoth"></div>
+                </div>
+                <div class="prefooterLine"></div>
+                <div class="clearBoth"></div>
+            </div>
+        </div>
+        <div class="clearBoth"></div>
+        <div class="footer">&#169; Copyright 2013, National Environmental Products Ltd. All Rights Reserved.</div>
+
+    </form>
+
+    <!-- include for jquery -->
+    <script type="text/javascript" src="../JS/jquery.js"></script>
+    <script type="text/javascript" src="../JS/jquery-ui.js"></script>
+
+    
+    <script type="text/javascript" src="../Controls/HumidityController.20160715.js"></script>
+    <script type="text/javascript" src="../Controls/bacnet_tools.js"></script>
+
+
+    <script type="text/javascript">
+
+        /* the top menu */
+        var mouseenter_topMenu = function (event) {
+            var id = $(this).attr("id");
+            if (id != "topHome")
+                $(this).find("a").stop(true, true).animate({ color: "#0f3f72" }, 500);
+        }
+        var mouseleave_topMenu = function (event) {
+            var id = $(this).attr("id");
+            if (id != "topHome")
+                $(this).find("a").stop(true, true).animate({ color: "#8f9194" }, 1000);
+        }
+        $(".tmiDetails").on({ mouseenter: mouseenter_topMenu, mouseleave: mouseleave_topMenu });
+        /* the blue menu below the top menu  */
+        var mouseenter_blueMenu = function (event) {
+            event.stopPropagation();
+            var id = $(this).attr("id");
+            if (id == "titleHum")
+                $(this).find("a").stop(true, true).animate({ color: "#43b2e5" }, 500);
+            else if (id == "titleAct")
+                $(this).find("a").stop(true, true).animate({ color: "#e9cc21" }, 500);
+            else if (id == "titleValve")
+                $(this).find("a").stop(true, true).animate({ color: "#e92124" }, 500);
+            else if (id == "titleHeater")
+                $(this).find("a").stop(true, true).animate({ color: "#e5681c" }, 500);
+            else if (id == "titleControls")
+                $(this).find("a").stop(true, true).animate({ color: "#afc46a" }, 500);
+            else if (id == "titleFrancais" || id == "titleContactUs")
+                $(this).find("a").stop(true, true).animate({ color: "#ffd93f" }, 500);
+        }
+        var mouseleave_blueMenu = function (event) {
+            event.stopPropagation();
+            $(this).find("a").stop(true, true).animate({ color: "#ffffff" }, 1000);
+        }
+        $(".itemL, .itemR").on({ mouseenter: mouseenter_blueMenu, mouseleave: mouseleave_blueMenu });
+    </script>
+
+    
+    <script type="text/javascript">
+        $("#NeptronicDocumentation").prop("href", "/Humidifiers/NeptronicDocumentation.aspx");
+    </script>
+
+
+</body>
+</html>
