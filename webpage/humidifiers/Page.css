@@ -1,0 +1,29 @@
+div#mainAdBanner {
+    position: relative;
+    height: 300px;
+    margin-top: 3px;
+    background-repeat: no-repeat;
+    background-image: url('Images/AdBack.png');
+}
+
+div#mainAdBannerDetails {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 785px;
+    height: 280px;
+    overflow: hidden;
+}
+
+
+div.mainCenterArea {
+    margin-left: 9px;
+}
+
+div#mainDetails {
+    margin-left: 8px;
+}
+
+a:link, a:visited {
+    color: #4d4849;
+}
